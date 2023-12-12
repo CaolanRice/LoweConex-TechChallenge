@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS responses (
+   id INT AUTO_INCREMENT PRIMARY KEY,
+   text VARCHAR(255),
+   result VARCHAR(255)
+);
+

@@ -1,0 +1,646 @@
+2023-12-12T11:20:32.831Z  INFO 31028 --- [main] C.L.i.PalindromeControllerTest           : Starting PalindromeControllerTest using Java 17.0.6 with PID 31028 (started by Caolan in C:\Users\Caolan\Desktop\LoweConex)
+2023-12-12T11:20:32.833Z  INFO 31028 --- [main] C.L.i.PalindromeControllerTest           : No active profile set, falling back to 1 default profile: "default"
+2023-12-12T11:20:33.811Z  INFO 31028 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-12T11:20:33.843Z  INFO 31028 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 0 JPA repository interfaces.
+2023-12-12T11:20:35.606Z DEBUG 31028 --- [main] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2023-12-12T11:20:35.607Z  INFO 31028 --- [main] com.zaxxer.hikari.HikariDataSource       : LoweConex - Starting...
+2023-12-12T11:20:35.971Z  INFO 31028 --- [main] com.zaxxer.hikari.pool.HikariPool        : LoweConex - Added connection conn0: url=jdbc:h2:file:~/TechChallengeDB/LoweConexDB user=SA
+2023-12-12T11:20:35.974Z  INFO 31028 --- [main] com.zaxxer.hikari.HikariDataSource       : LoweConex - Start completed.
+2023-12-12T11:20:35.979Z DEBUG 31028 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from file [C:\Users\Caolan\Desktop\LoweConex\target\classes\schema.sql]
+2023-12-12T11:20:35.988Z DEBUG 31028 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : 0 returned as update count for SQL: CREATE TABLE IF NOT EXISTS responses ( id INT AUTO_INCREMENT PRIMARY KEY, text VARCHAR(255), result VARCHAR(255) )
+2023-12-12T11:20:35.991Z DEBUG 31028 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from file [C:\Users\Caolan\Desktop\LoweConex\target\classes\schema.sql] in 9 ms.
+2023-12-12T11:20:36.148Z  INFO 31028 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-12T11:20:36.252Z  INFO 31028 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
+2023-12-12T11:20:36.320Z  INFO 31028 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2023-12-12T11:20:36.518Z  INFO 31028 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-12T11:20:36.604Z  WARN 31028 --- [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2023-12-12T11:20:37.135Z  INFO 31028 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-12-12T11:20:37.148Z  INFO 31028 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-12T11:20:37.410Z  WARN 31028 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-12T11:20:37.938Z  INFO 31028 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/TechChallengeDB/LoweConexDB'
+2023-12-12T11:20:38.014Z  INFO 31028 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-12-12T11:20:38.015Z  INFO 31028 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-12-12T11:20:38.016Z  INFO 31028 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2023-12-12T11:20:38.053Z  INFO 31028 --- [main] C.L.i.PalindromeControllerTest           : Started PalindromeControllerTest in 5.645 seconds (process running for 6.982)
+2023-12-12T11:20:38.381Z  INFO 31028 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-12T11:20:38.385Z  INFO 31028 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : LoweConex - Shutdown initiated...
+2023-12-12T11:20:38.394Z  INFO 31028 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : LoweConex - Shutdown completed.
+2023-12-12T11:24:31.295Z  INFO 4528 --- [main] C.LoweConex.LoweConexApplicationTests    : Starting LoweConexApplicationTests using Java 17.0.6 with PID 4528 (started by Caolan in C:\Users\Caolan\Desktop\LoweConex)
+2023-12-12T11:24:31.297Z  INFO 4528 --- [main] C.LoweConex.LoweConexApplicationTests    : No active profile set, falling back to 1 default profile: "default"
+2023-12-12T11:24:32.101Z  INFO 4528 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-12T11:24:32.127Z  INFO 4528 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 0 JPA repository interfaces.
+2023-12-12T11:24:32.649Z DEBUG 4528 --- [main] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2023-12-12T11:24:32.650Z  INFO 4528 --- [main] com.zaxxer.hikari.HikariDataSource       : LoweConex - Starting...
+2023-12-12T11:24:32.930Z  INFO 4528 --- [main] com.zaxxer.hikari.pool.HikariPool        : LoweConex - Added connection conn0: url=jdbc:h2:file:~/TechChallengeDB/LoweConexDB user=SA
+2023-12-12T11:24:32.932Z  INFO 4528 --- [main] com.zaxxer.hikari.HikariDataSource       : LoweConex - Start completed.
+2023-12-12T11:24:32.936Z DEBUG 4528 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from file [C:\Users\Caolan\Desktop\LoweConex\target\classes\schema.sql]
+2023-12-12T11:24:32.941Z DEBUG 4528 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : 0 returned as update count for SQL: CREATE TABLE IF NOT EXISTS responses ( id INT AUTO_INCREMENT PRIMARY KEY, text VARCHAR(255), result VARCHAR(255) )
+2023-12-12T11:24:32.943Z DEBUG 4528 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from file [C:\Users\Caolan\Desktop\LoweConex\target\classes\schema.sql] in 5 ms.
+2023-12-12T11:24:33.048Z  INFO 4528 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-12T11:24:33.146Z  INFO 4528 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
+2023-12-12T11:24:33.206Z  INFO 4528 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2023-12-12T11:24:33.605Z  INFO 4528 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-12T11:24:33.685Z  WARN 4528 --- [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2023-12-12T11:24:34.039Z  INFO 4528 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-12-12T11:24:34.045Z  INFO 4528 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-12T11:24:34.093Z DEBUG 4528 --- [main] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT text, result FROM responses]
+2023-12-12T11:24:34.095Z DEBUG 4528 --- [main] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2023-12-12T11:24:34.365Z  WARN 4528 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-12T11:24:34.804Z  INFO 4528 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/TechChallengeDB/LoweConexDB'
+2023-12-12T11:24:34.868Z  INFO 4528 --- [main] C.LoweConex.LoweConexApplicationTests    : Started LoweConexApplicationTests in 3.963 seconds (process running for 5.45)
+2023-12-12T11:24:36.171Z  INFO 4528 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-12T11:24:36.174Z  INFO 4528 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : LoweConex - Shutdown initiated...
+2023-12-12T11:24:36.204Z  INFO 4528 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : LoweConex - Shutdown completed.
+2023-12-12T11:25:33.617Z  INFO 31240 --- [main] C.LoweConex.LoweConexApplicationTests    : Starting LoweConexApplicationTests using Java 17.0.6 with PID 31240 (started by Caolan in C:\Users\Caolan\Desktop\LoweConex)
+2023-12-12T11:25:33.619Z  INFO 31240 --- [main] C.LoweConex.LoweConexApplicationTests    : No active profile set, falling back to 1 default profile: "default"
+2023-12-12T11:25:34.420Z  INFO 31240 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-12T11:25:34.452Z  INFO 31240 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 0 JPA repository interfaces.
+2023-12-12T11:25:34.912Z DEBUG 31240 --- [main] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2023-12-12T11:25:34.913Z  INFO 31240 --- [main] com.zaxxer.hikari.HikariDataSource       : LoweConex - Starting...
+2023-12-12T11:25:35.179Z  INFO 31240 --- [main] com.zaxxer.hikari.pool.HikariPool        : LoweConex - Added connection conn0: url=jdbc:h2:file:~/TechChallengeDB/LoweConexDB user=SA
+2023-12-12T11:25:35.181Z  INFO 31240 --- [main] com.zaxxer.hikari.HikariDataSource       : LoweConex - Start completed.
+2023-12-12T11:25:35.185Z DEBUG 31240 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from file [C:\Users\Caolan\Desktop\LoweConex\target\classes\schema.sql]
+2023-12-12T11:25:35.190Z DEBUG 31240 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : 0 returned as update count for SQL: CREATE TABLE IF NOT EXISTS responses ( id INT AUTO_INCREMENT PRIMARY KEY, text VARCHAR(255), result VARCHAR(255) )
+2023-12-12T11:25:35.192Z DEBUG 31240 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from file [C:\Users\Caolan\Desktop\LoweConex\target\classes\schema.sql] in 6 ms.
+2023-12-12T11:25:35.299Z  INFO 31240 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-12T11:25:35.405Z  INFO 31240 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
+2023-12-12T11:25:35.453Z  INFO 31240 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2023-12-12T11:25:35.856Z  INFO 31240 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-12T11:25:35.923Z  WARN 31240 --- [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2023-12-12T11:25:36.299Z  INFO 31240 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-12-12T11:25:36.305Z  INFO 31240 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-12T11:25:36.354Z DEBUG 31240 --- [main] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT text, result FROM responses]
+2023-12-12T11:25:36.356Z DEBUG 31240 --- [main] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2023-12-12T11:25:36.613Z  WARN 31240 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-12T11:25:37.118Z  INFO 31240 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/TechChallengeDB/LoweConexDB'
+2023-12-12T11:25:37.180Z  INFO 31240 --- [main] C.LoweConex.LoweConexApplicationTests    : Started LoweConexApplicationTests in 3.946 seconds (process running for 5.185)
+2023-12-12T11:25:38.544Z  INFO 31240 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-12T11:25:38.548Z  INFO 31240 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : LoweConex - Shutdown initiated...
+2023-12-12T11:25:38.561Z  INFO 31240 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : LoweConex - Shutdown completed.
+2023-12-12T11:29:28.139Z  INFO 13264 --- [main] C.LoweConex.LoweConexApplicationTests    : Starting LoweConexApplicationTests using Java 17.0.6 with PID 13264 (started by Caolan in C:\Users\Caolan\Desktop\LoweConex)
+2023-12-12T11:29:28.141Z  INFO 13264 --- [main] C.LoweConex.LoweConexApplicationTests    : No active profile set, falling back to 1 default profile: "default"
+2023-12-12T11:29:28.997Z  INFO 13264 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-12T11:29:29.026Z  INFO 13264 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 0 JPA repository interfaces.
+2023-12-12T11:29:29.505Z DEBUG 13264 --- [main] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2023-12-12T11:29:29.505Z  INFO 13264 --- [main] com.zaxxer.hikari.HikariDataSource       : LoweConex - Starting...
+2023-12-12T11:29:29.756Z  INFO 13264 --- [main] com.zaxxer.hikari.pool.HikariPool        : LoweConex - Added connection conn0: url=jdbc:h2:file:~/TechChallengeDB/LoweConexDB user=SA
+2023-12-12T11:29:29.758Z  INFO 13264 --- [main] com.zaxxer.hikari.HikariDataSource       : LoweConex - Start completed.
+2023-12-12T11:29:29.761Z DEBUG 13264 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from file [C:\Users\Caolan\Desktop\LoweConex\target\classes\schema.sql]
+2023-12-12T11:29:29.766Z DEBUG 13264 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : 0 returned as update count for SQL: CREATE TABLE IF NOT EXISTS responses ( id INT AUTO_INCREMENT PRIMARY KEY, text VARCHAR(255), result VARCHAR(255) )
+2023-12-12T11:29:29.768Z DEBUG 13264 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from file [C:\Users\Caolan\Desktop\LoweConex\target\classes\schema.sql] in 5 ms.
+2023-12-12T11:29:29.905Z  INFO 13264 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-12T11:29:29.992Z  INFO 13264 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
+2023-12-12T11:29:30.033Z  INFO 13264 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2023-12-12T11:29:30.415Z  INFO 13264 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-12T11:29:30.485Z  WARN 13264 --- [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2023-12-12T11:29:30.836Z  INFO 13264 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-12-12T11:29:30.842Z  INFO 13264 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-12T11:29:30.889Z DEBUG 13264 --- [main] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT text, result FROM responses]
+2023-12-12T11:29:30.891Z DEBUG 13264 --- [main] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2023-12-12T11:29:31.125Z  WARN 13264 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-12T11:29:31.593Z  INFO 13264 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/TechChallengeDB/LoweConexDB'
+2023-12-12T11:29:31.665Z  INFO 13264 --- [main] C.LoweConex.LoweConexApplicationTests    : Started LoweConexApplicationTests in 3.995 seconds (process running for 5.251)
+2023-12-12T11:29:33.057Z  INFO 13264 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-12T11:29:33.063Z  INFO 13264 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : LoweConex - Shutdown initiated...
+2023-12-12T11:29:33.112Z  INFO 13264 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : LoweConex - Shutdown completed.
+2023-12-12T11:30:14.429Z  INFO 16236 --- [main] C.L.i.PalindromeServiceTest              : Starting PalindromeServiceTest using Java 17.0.6 with PID 16236 (started by Caolan in C:\Users\Caolan\Desktop\LoweConex)
+2023-12-12T11:30:14.432Z  INFO 16236 --- [main] C.L.i.PalindromeServiceTest              : No active profile set, falling back to 1 default profile: "default"
+2023-12-12T11:30:15.238Z  INFO 16236 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-12T11:30:15.264Z  INFO 16236 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 0 JPA repository interfaces.
+2023-12-12T11:30:15.747Z DEBUG 16236 --- [main] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2023-12-12T11:30:15.748Z  INFO 16236 --- [main] com.zaxxer.hikari.HikariDataSource       : LoweConex - Starting...
+2023-12-12T11:30:16.029Z  INFO 16236 --- [main] com.zaxxer.hikari.pool.HikariPool        : LoweConex - Added connection conn0: url=jdbc:h2:file:~/TechChallengeDB/LoweConexDB user=SA
+2023-12-12T11:30:16.031Z  INFO 16236 --- [main] com.zaxxer.hikari.HikariDataSource       : LoweConex - Start completed.
+2023-12-12T11:30:16.036Z DEBUG 16236 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from file [C:\Users\Caolan\Desktop\LoweConex\target\classes\schema.sql]
+2023-12-12T11:30:16.044Z DEBUG 16236 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : 0 returned as update count for SQL: CREATE TABLE IF NOT EXISTS responses ( id INT AUTO_INCREMENT PRIMARY KEY, text VARCHAR(255), result VARCHAR(255) )
+2023-12-12T11:30:16.046Z DEBUG 16236 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from file [C:\Users\Caolan\Desktop\LoweConex\target\classes\schema.sql] in 8 ms.
+2023-12-12T11:30:16.175Z  INFO 16236 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-12T11:30:16.281Z  INFO 16236 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
+2023-12-12T11:30:16.329Z  INFO 16236 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2023-12-12T11:30:16.756Z  INFO 16236 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-12T11:30:16.830Z  WARN 16236 --- [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2023-12-12T11:30:17.234Z  INFO 16236 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-12-12T11:30:17.240Z  INFO 16236 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-12T11:30:17.286Z DEBUG 16236 --- [main] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT text, result FROM responses]
+2023-12-12T11:30:17.287Z DEBUG 16236 --- [main] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2023-12-12T11:30:17.530Z  WARN 16236 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-12T11:30:18.013Z  INFO 16236 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/TechChallengeDB/LoweConexDB'
+2023-12-12T11:30:18.084Z  INFO 16236 --- [main] C.L.i.PalindromeServiceTest              : Started PalindromeServiceTest in 4.081 seconds (process running for 5.441)
+2023-12-12T11:30:19.010Z DEBUG 16236 --- [main] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL update
+2023-12-12T11:30:19.011Z DEBUG 16236 --- [main] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [INSERT INTO responses (text, result) VALUES (?, ?)]
+2023-12-12T11:30:19.011Z DEBUG 16236 --- [main] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2023-12-12T11:30:19.046Z  INFO 16236 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-12T11:30:19.049Z  INFO 16236 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : LoweConex - Shutdown initiated...
+2023-12-12T11:30:19.081Z  INFO 16236 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : LoweConex - Shutdown completed.
+2023-12-12T11:30:27.385Z  INFO 1752 --- [main] C.L.i.PalindromeControllerTest           : Starting PalindromeControllerTest using Java 17.0.6 with PID 1752 (started by Caolan in C:\Users\Caolan\Desktop\LoweConex)
+2023-12-12T11:30:27.387Z  INFO 1752 --- [main] C.L.i.PalindromeControllerTest           : No active profile set, falling back to 1 default profile: "default"
+2023-12-12T11:30:28.256Z  INFO 1752 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-12T11:30:28.284Z  INFO 1752 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 0 JPA repository interfaces.
+2023-12-12T11:30:29.872Z DEBUG 1752 --- [main] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2023-12-12T11:30:29.873Z  INFO 1752 --- [main] com.zaxxer.hikari.HikariDataSource       : LoweConex - Starting...
+2023-12-12T11:30:30.196Z  INFO 1752 --- [main] com.zaxxer.hikari.pool.HikariPool        : LoweConex - Added connection conn0: url=jdbc:h2:file:~/TechChallengeDB/LoweConexDB user=SA
+2023-12-12T11:30:30.199Z  INFO 1752 --- [main] com.zaxxer.hikari.HikariDataSource       : LoweConex - Start completed.
+2023-12-12T11:30:30.204Z DEBUG 1752 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from file [C:\Users\Caolan\Desktop\LoweConex\target\classes\schema.sql]
+2023-12-12T11:30:30.212Z DEBUG 1752 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : 0 returned as update count for SQL: CREATE TABLE IF NOT EXISTS responses ( id INT AUTO_INCREMENT PRIMARY KEY, text VARCHAR(255), result VARCHAR(255) )
+2023-12-12T11:30:30.214Z DEBUG 1752 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from file [C:\Users\Caolan\Desktop\LoweConex\target\classes\schema.sql] in 8 ms.
+2023-12-12T11:30:30.365Z  INFO 1752 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-12T11:30:30.473Z  INFO 1752 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
+2023-12-12T11:30:30.534Z  INFO 1752 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2023-12-12T11:30:30.745Z  INFO 1752 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-12T11:30:30.831Z  WARN 1752 --- [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2023-12-12T11:30:31.310Z  INFO 1752 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-12-12T11:30:31.316Z  INFO 1752 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-12T11:30:31.587Z  WARN 1752 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-12T11:30:32.079Z  INFO 1752 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/TechChallengeDB/LoweConexDB'
+2023-12-12T11:30:32.162Z  INFO 1752 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-12-12T11:30:32.163Z  INFO 1752 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-12-12T11:30:32.164Z  INFO 1752 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2023-12-12T11:30:32.201Z  INFO 1752 --- [main] C.L.i.PalindromeControllerTest           : Started PalindromeControllerTest in 5.235 seconds (process running for 6.551)
+2023-12-12T11:30:32.547Z  INFO 1752 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-12T11:30:32.550Z  INFO 1752 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : LoweConex - Shutdown initiated...
+2023-12-12T11:30:32.579Z  INFO 1752 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : LoweConex - Shutdown completed.
+2023-12-12T11:36:54.068Z  INFO 27396 --- [restartedMain] Caolan.LoweConex.LoweConexApplication    : Starting LoweConexApplication using Java 17.0.6 with PID 27396 (C:\Users\Caolan\Desktop\LoweConex\target\classes started by Caolan in C:\Users\Caolan\Desktop\LoweConex)
+2023-12-12T11:36:54.070Z  INFO 27396 --- [restartedMain] Caolan.LoweConex.LoweConexApplication    : No active profile set, falling back to 1 default profile: "default"
+2023-12-12T11:36:54.119Z  INFO 27396 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-12-12T11:36:54.119Z  INFO 27396 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-12-12T11:36:54.811Z  INFO 27396 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-12T11:36:54.829Z  INFO 27396 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 0 JPA repository interfaces.
+2023-12-12T11:36:55.324Z  INFO 27396 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2023-12-12T11:36:55.332Z  INFO 27396 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-12T11:36:55.332Z  INFO 27396 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2023-12-12T11:36:55.384Z  INFO 27396 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-12T11:36:55.384Z  INFO 27396 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1265 ms
+2023-12-12T11:36:55.409Z  INFO 27396 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : LoweConex - Starting...
+2023-12-12T11:36:55.608Z  INFO 27396 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : LoweConex - Added connection conn0: url=jdbc:h2:file:~/TechChallengeDB/LoweConexDB user=SA
+2023-12-12T11:36:55.609Z  INFO 27396 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : LoweConex - Start completed.
+2023-12-12T11:36:55.618Z  INFO 27396 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/TechChallengeDB/LoweConexDB'
+2023-12-12T11:36:55.687Z DEBUG 27396 --- [restartedMain] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2023-12-12T11:36:55.689Z DEBUG 27396 --- [restartedMain] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from file [C:\Users\Caolan\Desktop\LoweConex\target\classes\schema.sql]
+2023-12-12T11:36:55.694Z DEBUG 27396 --- [restartedMain] o.s.jdbc.datasource.init.ScriptUtils     : 0 returned as update count for SQL: CREATE TABLE IF NOT EXISTS responses ( id INT AUTO_INCREMENT PRIMARY KEY, text VARCHAR(255), result VARCHAR(255) )
+2023-12-12T11:36:55.695Z DEBUG 27396 --- [restartedMain] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from file [C:\Users\Caolan\Desktop\LoweConex\target\classes\schema.sql] in 5 ms.
+2023-12-12T11:36:55.775Z  INFO 27396 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-12T11:36:55.847Z  INFO 27396 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
+2023-12-12T11:36:55.894Z  INFO 27396 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2023-12-12T11:36:56.173Z  INFO 27396 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-12T11:36:56.214Z  WARN 27396 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2023-12-12T11:36:56.474Z  INFO 27396 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-12-12T11:36:56.479Z  INFO 27396 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-12T11:36:56.506Z DEBUG 27396 --- [restartedMain] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT text, result FROM responses]
+2023-12-12T11:36:56.507Z DEBUG 27396 --- [restartedMain] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2023-12-12T11:36:56.587Z  WARN 27396 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-12T11:36:56.906Z  INFO 27396 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-12-12T11:36:56.945Z  INFO 27396 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2023-12-12T11:36:56.952Z  INFO 27396 --- [restartedMain] Caolan.LoweConex.LoweConexApplication    : Started LoweConexApplication in 3.314 seconds (process running for 3.991)
+2023-12-12T11:37:58.134Z  INFO 27396 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-12T11:37:58.134Z  INFO 27396 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-12-12T11:37:58.135Z  INFO 27396 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-12-12T11:38:02.547Z DEBUG 27396 --- [http-nio-8080-exec-3] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL update
+2023-12-12T11:38:02.548Z DEBUG 27396 --- [http-nio-8080-exec-3] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [INSERT INTO responses (text, result) VALUES (?, ?)]
+2023-12-12T11:38:02.548Z DEBUG 27396 --- [http-nio-8080-exec-3] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2023-12-12T11:39:29.439Z DEBUG 27396 --- [http-nio-8080-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL update
+2023-12-12T11:39:29.439Z DEBUG 27396 --- [http-nio-8080-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [INSERT INTO responses (text, result) VALUES (?, ?)]
+2023-12-12T11:39:29.439Z DEBUG 27396 --- [http-nio-8080-exec-5] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2023-12-12T11:47:52.385Z  INFO 27396 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-12T11:47:52.388Z  INFO 27396 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : LoweConex - Shutdown initiated...
+2023-12-12T11:47:52.412Z  INFO 27396 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : LoweConex - Shutdown completed.
+2023-12-12T11:49:18.260Z  INFO 29384 --- [restartedMain] Caolan.LoweConex.LoweConexApplication    : Starting LoweConexApplication using Java 17.0.6 with PID 29384 (C:\Users\Caolan\Desktop\LoweConex\target\classes started by Caolan in C:\Users\Caolan\Desktop\LoweConex)
+2023-12-12T11:49:18.262Z  INFO 29384 --- [restartedMain] Caolan.LoweConex.LoweConexApplication    : No active profile set, falling back to 1 default profile: "default"
+2023-12-12T11:49:18.312Z  INFO 29384 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-12-12T11:49:18.312Z  INFO 29384 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-12-12T11:49:18.906Z  INFO 29384 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-12T11:49:18.925Z  INFO 29384 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 0 JPA repository interfaces.
+2023-12-12T11:49:19.431Z  INFO 29384 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2023-12-12T11:49:19.438Z  INFO 29384 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-12T11:49:19.439Z  INFO 29384 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2023-12-12T11:49:19.487Z  INFO 29384 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-12T11:49:19.488Z  INFO 29384 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1174 ms
+2023-12-12T11:49:19.511Z  INFO 29384 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : LoweConex - Starting...
+2023-12-12T11:49:19.728Z  INFO 29384 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : LoweConex - Added connection conn0: url=jdbc:h2:file:~/TechChallengeDB/LoweConexDB user=SA
+2023-12-12T11:49:19.731Z  INFO 29384 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : LoweConex - Start completed.
+2023-12-12T11:49:19.743Z  INFO 29384 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/TechChallengeDB/LoweConexDB'
+2023-12-12T11:49:19.814Z DEBUG 29384 --- [restartedMain] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2023-12-12T11:49:19.815Z DEBUG 29384 --- [restartedMain] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from file [C:\Users\Caolan\Desktop\LoweConex\target\classes\schema.sql]
+2023-12-12T11:49:19.820Z DEBUG 29384 --- [restartedMain] o.s.jdbc.datasource.init.ScriptUtils     : 0 returned as update count for SQL: CREATE TABLE IF NOT EXISTS responses ( id INT AUTO_INCREMENT PRIMARY KEY, text VARCHAR(255), result VARCHAR(255) )
+2023-12-12T11:49:19.821Z DEBUG 29384 --- [restartedMain] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from file [C:\Users\Caolan\Desktop\LoweConex\target\classes\schema.sql] in 6 ms.
+2023-12-12T11:49:19.902Z  INFO 29384 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-12T11:49:19.956Z  INFO 29384 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
+2023-12-12T11:49:19.993Z  INFO 29384 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2023-12-12T11:49:20.206Z  INFO 29384 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-12T11:49:20.243Z  WARN 29384 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2023-12-12T11:49:20.512Z  INFO 29384 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-12-12T11:49:20.518Z  INFO 29384 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-12T11:49:20.554Z DEBUG 29384 --- [restartedMain] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT text, result FROM responses]
+2023-12-12T11:49:20.555Z DEBUG 29384 --- [restartedMain] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2023-12-12T11:49:20.638Z  WARN 29384 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-12T11:49:20.986Z  INFO 29384 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-12-12T11:49:21.024Z  INFO 29384 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2023-12-12T11:49:21.032Z  INFO 29384 --- [restartedMain] Caolan.LoweConex.LoweConexApplication    : Started LoweConexApplication in 3.182 seconds (process running for 3.903)
+2023-12-12T11:49:24.111Z  INFO 29384 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-12T11:49:24.112Z  INFO 29384 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-12-12T11:49:24.113Z  INFO 29384 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-12-12T11:49:27.972Z DEBUG 29384 --- [http-nio-8080-exec-3] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL update
+2023-12-12T11:49:27.973Z DEBUG 29384 --- [http-nio-8080-exec-3] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [INSERT INTO responses (text, result) VALUES (?, ?)]
+2023-12-12T11:49:27.973Z DEBUG 29384 --- [http-nio-8080-exec-3] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2023-12-12T11:49:31.285Z DEBUG 29384 --- [http-nio-8080-exec-4] o.s.jdbc.core.JdbcTemplate               : Executing SQL update [DELETE FROM responses]
+2023-12-12T11:49:31.288Z  INFO 29384 --- [http-nio-8080-exec-4] C.LoweConex.service.PalindromeService    : Successfully deleted 7 rows from the 'responses' table.
+2023-12-12T11:52:00.032Z  INFO 29384 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-12-12T11:52:00.053Z  INFO 29384 --- [Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-12T11:52:00.057Z  INFO 29384 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : LoweConex - Shutdown initiated...
+2023-12-12T11:52:00.060Z  INFO 29384 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : LoweConex - Shutdown completed.
+2023-12-12T11:52:00.168Z  INFO 29384 --- [restartedMain] Caolan.LoweConex.LoweConexApplication    : Starting LoweConexApplication using Java 17.0.6 with PID 29384 (C:\Users\Caolan\Desktop\LoweConex\target\classes started by Caolan in C:\Users\Caolan\Desktop\LoweConex)
+2023-12-12T11:52:00.169Z  INFO 29384 --- [restartedMain] Caolan.LoweConex.LoweConexApplication    : No active profile set, falling back to 1 default profile: "default"
+2023-12-12T11:52:00.363Z  INFO 29384 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-12T11:52:00.365Z  INFO 29384 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2023-12-12T11:52:00.448Z  INFO 29384 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2023-12-12T11:52:00.448Z  INFO 29384 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-12T11:52:00.448Z  INFO 29384 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2023-12-12T11:52:00.471Z  INFO 29384 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-12T11:52:00.471Z  INFO 29384 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 298 ms
+2023-12-12T11:52:00.484Z  INFO 29384 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : LoweConex - Starting...
+2023-12-12T11:52:00.494Z  INFO 29384 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : LoweConex - Added connection conn11: url=jdbc:h2:file:~/TechChallengeDB/LoweConexDB user=SA
+2023-12-12T11:52:00.495Z  INFO 29384 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : LoweConex - Start completed.
+2023-12-12T11:52:00.495Z  INFO 29384 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/TechChallengeDB/LoweConexDB'
+2023-12-12T11:52:00.507Z DEBUG 29384 --- [restartedMain] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2023-12-12T11:52:00.507Z DEBUG 29384 --- [restartedMain] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from file [C:\Users\Caolan\Desktop\LoweConex\target\classes\schema.sql]
+2023-12-12T11:52:00.507Z DEBUG 29384 --- [restartedMain] o.s.jdbc.datasource.init.ScriptUtils     : 0 returned as update count for SQL: CREATE TABLE IF NOT EXISTS responses ( id INT AUTO_INCREMENT PRIMARY KEY, text VARCHAR(255), result VARCHAR(255) )
+2023-12-12T11:52:00.508Z DEBUG 29384 --- [restartedMain] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from file [C:\Users\Caolan\Desktop\LoweConex\target\classes\schema.sql] in 1 ms.
+2023-12-12T11:52:00.517Z  INFO 29384 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-12T11:52:00.521Z  INFO 29384 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2023-12-12T11:52:00.525Z  INFO 29384 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-12T11:52:00.526Z  WARN 29384 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2023-12-12T11:52:00.534Z  INFO 29384 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-12-12T11:52:00.534Z  INFO 29384 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-12T11:52:00.541Z  WARN 29384 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'palindromeController': Resolution of declared constructors on bean Class [Caolan.LoweConex.controller.PalindromeController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@52cdf8d2] failed
+2023-12-12T11:52:00.541Z  INFO 29384 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-12T11:52:00.542Z  INFO 29384 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : LoweConex - Shutdown initiated...
+2023-12-12T11:52:00.570Z  INFO 29384 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : LoweConex - Shutdown completed.
+2023-12-12T11:52:00.571Z  INFO 29384 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-12-12T11:52:00.576Z  INFO 29384 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-12-12T11:52:00.595Z ERROR 29384 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'palindromeController': Resolution of declared constructors on bean Class [Caolan.LoweConex.controller.PalindromeController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@52cdf8d2] failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:368) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1295) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1190) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:946) ~[spring-context-6.1.1.jar:6.1.1]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:616) ~[spring-context-6.1.1.jar:6.1.1]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331) ~[spring-boot-3.2.0.jar:3.2.0]
+	at Caolan.LoweConex.LoweConexApplication.main(LoweConexApplication.java:13) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.2.0.jar:3.2.0]
+Caused by: java.lang.NoClassDefFoundError: Caolan/LoweConex/service/PalindromeService
+	at java.base/java.lang.Class.getDeclaredConstructors0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.privateGetDeclaredConstructors(Class.java:3373) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredConstructors(Class.java:2555) ~[na:na]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:363) ~[spring-beans-6.1.1.jar:6.1.1]
+	... 23 common frames omitted
+Caused by: java.lang.ClassNotFoundException: Caolan.LoweConex.service.PalindromeService
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:467) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121) ~[spring-boot-devtools-3.2.0.jar:3.2.0]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
+	... 27 common frames omitted
+
+2023-12-12T11:52:02.067Z  INFO 29384 --- [restartedMain] Caolan.LoweConex.LoweConexApplication    : Starting LoweConexApplication using Java 17.0.6 with PID 29384 (C:\Users\Caolan\Desktop\LoweConex\target\classes started by Caolan in C:\Users\Caolan\Desktop\LoweConex)
+2023-12-12T11:52:02.067Z  INFO 29384 --- [restartedMain] Caolan.LoweConex.LoweConexApplication    : No active profile set, falling back to 1 default profile: "default"
+2023-12-12T11:52:02.239Z  INFO 29384 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-12T11:52:02.241Z  INFO 29384 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2023-12-12T11:52:02.306Z  INFO 29384 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2023-12-12T11:52:02.307Z  INFO 29384 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-12T11:52:02.307Z  INFO 29384 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2023-12-12T11:52:02.331Z  INFO 29384 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2023-12-12T11:52:02.331Z  INFO 29384 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 261 ms
+2023-12-12T11:52:02.345Z  INFO 29384 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : LoweConex - Starting...
+2023-12-12T11:52:02.354Z  INFO 29384 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : LoweConex - Added connection conn12: url=jdbc:h2:file:~/TechChallengeDB/LoweConexDB user=SA
+2023-12-12T11:52:02.355Z  INFO 29384 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : LoweConex - Start completed.
+2023-12-12T11:52:02.355Z  INFO 29384 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/TechChallengeDB/LoweConexDB'
+2023-12-12T11:52:02.378Z DEBUG 29384 --- [restartedMain] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2023-12-12T11:52:02.378Z DEBUG 29384 --- [restartedMain] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from file [C:\Users\Caolan\Desktop\LoweConex\target\classes\schema.sql]
+2023-12-12T11:52:02.379Z DEBUG 29384 --- [restartedMain] o.s.jdbc.datasource.init.ScriptUtils     : 0 returned as update count for SQL: CREATE TABLE IF NOT EXISTS responses ( id INT AUTO_INCREMENT PRIMARY KEY, text VARCHAR(255), result VARCHAR(255) )
+2023-12-12T11:52:02.379Z DEBUG 29384 --- [restartedMain] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from file [C:\Users\Caolan\Desktop\LoweConex\target\classes\schema.sql] in 1 ms.
+2023-12-12T11:52:02.395Z  INFO 29384 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-12T11:52:02.399Z  INFO 29384 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2023-12-12T11:52:02.406Z  INFO 29384 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-12T11:52:02.408Z  WARN 29384 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2023-12-12T11:52:02.420Z  INFO 29384 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-12-12T11:52:02.420Z  INFO 29384 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-12T11:52:02.442Z DEBUG 29384 --- [restartedMain] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT text, result FROM responses]
+2023-12-12T11:52:02.442Z DEBUG 29384 --- [restartedMain] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2023-12-12T11:52:02.469Z  WARN 29384 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-12T11:52:02.614Z  INFO 29384 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-12-12T11:52:02.631Z  INFO 29384 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2023-12-12T11:52:02.634Z  INFO 29384 --- [restartedMain] Caolan.LoweConex.LoweConexApplication    : Started LoweConexApplication in 0.599 seconds (process running for 165.505)
+2023-12-12T11:52:02.636Z  INFO 29384 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-12-12T11:52:08.804Z  INFO 29384 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-12T11:52:08.805Z  INFO 29384 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : LoweConex - Shutdown initiated...
+2023-12-12T11:52:08.824Z  INFO 29384 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : LoweConex - Shutdown completed.
+2023-12-12T11:56:26.644Z  INFO 31192 --- [main] C.L.i.PalindromeControllerTest           : Starting PalindromeControllerTest using Java 17.0.6 with PID 31192 (started by Caolan in C:\Users\Caolan\Desktop\LoweConex)
+2023-12-12T11:56:26.646Z  INFO 31192 --- [main] C.L.i.PalindromeControllerTest           : No active profile set, falling back to 1 default profile: "default"
+2023-12-12T11:56:27.474Z  INFO 31192 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-12T11:56:27.508Z  INFO 31192 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 0 JPA repository interfaces.
+2023-12-12T11:56:29.198Z DEBUG 31192 --- [main] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2023-12-12T11:56:29.199Z  INFO 31192 --- [main] com.zaxxer.hikari.HikariDataSource       : LoweConex - Starting...
+2023-12-12T11:56:29.526Z  INFO 31192 --- [main] com.zaxxer.hikari.pool.HikariPool        : LoweConex - Added connection conn0: url=jdbc:h2:file:~/TechChallengeDB/LoweConexDB user=SA
+2023-12-12T11:56:29.528Z  INFO 31192 --- [main] com.zaxxer.hikari.HikariDataSource       : LoweConex - Start completed.
+2023-12-12T11:56:29.534Z DEBUG 31192 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from file [C:\Users\Caolan\Desktop\LoweConex\target\classes\schema.sql]
+2023-12-12T11:56:29.543Z DEBUG 31192 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : 0 returned as update count for SQL: CREATE TABLE IF NOT EXISTS responses ( id INT AUTO_INCREMENT PRIMARY KEY, text VARCHAR(255), result VARCHAR(255) )
+2023-12-12T11:56:29.547Z DEBUG 31192 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from file [C:\Users\Caolan\Desktop\LoweConex\target\classes\schema.sql] in 10 ms.
+2023-12-12T11:56:29.680Z  INFO 31192 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-12T11:56:29.776Z  INFO 31192 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
+2023-12-12T11:56:29.837Z  INFO 31192 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2023-12-12T11:56:30.064Z  INFO 31192 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-12T11:56:30.169Z  WARN 31192 --- [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2023-12-12T11:56:30.716Z  INFO 31192 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-12-12T11:56:30.722Z  INFO 31192 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-12T11:56:30.981Z  WARN 31192 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-12T11:56:31.509Z  INFO 31192 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/TechChallengeDB/LoweConexDB'
+2023-12-12T11:56:31.584Z  INFO 31192 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-12-12T11:56:31.585Z  INFO 31192 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-12-12T11:56:31.586Z  INFO 31192 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2023-12-12T11:56:31.630Z  INFO 31192 --- [main] C.L.i.PalindromeControllerTest           : Started PalindromeControllerTest in 5.383 seconds (process running for 6.857)
+2023-12-12T11:56:31.981Z  INFO 31192 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-12T11:56:31.986Z  INFO 31192 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : LoweConex - Shutdown initiated...
+2023-12-12T11:56:31.996Z  INFO 31192 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : LoweConex - Shutdown completed.
+2023-12-12T11:56:48.063Z  INFO 9500 --- [main] C.L.i.PalindromeServiceTest              : Starting PalindromeServiceTest using Java 17.0.6 with PID 9500 (started by Caolan in C:\Users\Caolan\Desktop\LoweConex)
+2023-12-12T11:56:48.065Z  INFO 9500 --- [main] C.L.i.PalindromeServiceTest              : No active profile set, falling back to 1 default profile: "default"
+2023-12-12T11:56:48.903Z  INFO 9500 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-12T11:56:48.932Z  INFO 9500 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 0 JPA repository interfaces.
+2023-12-12T11:56:49.454Z DEBUG 9500 --- [main] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2023-12-12T11:56:49.455Z  INFO 9500 --- [main] com.zaxxer.hikari.HikariDataSource       : LoweConex - Starting...
+2023-12-12T11:56:49.702Z  INFO 9500 --- [main] com.zaxxer.hikari.pool.HikariPool        : LoweConex - Added connection conn0: url=jdbc:h2:file:~/TechChallengeDB/LoweConexDB user=SA
+2023-12-12T11:56:49.704Z  INFO 9500 --- [main] com.zaxxer.hikari.HikariDataSource       : LoweConex - Start completed.
+2023-12-12T11:56:49.707Z DEBUG 9500 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from file [C:\Users\Caolan\Desktop\LoweConex\target\classes\schema.sql]
+2023-12-12T11:56:49.713Z DEBUG 9500 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : 0 returned as update count for SQL: CREATE TABLE IF NOT EXISTS responses ( id INT AUTO_INCREMENT PRIMARY KEY, text VARCHAR(255), result VARCHAR(255) )
+2023-12-12T11:56:49.715Z DEBUG 9500 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from file [C:\Users\Caolan\Desktop\LoweConex\target\classes\schema.sql] in 6 ms.
+2023-12-12T11:56:49.836Z  INFO 9500 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-12T11:56:49.967Z  INFO 9500 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
+2023-12-12T11:56:50.014Z  INFO 9500 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2023-12-12T11:56:50.433Z  INFO 9500 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-12T11:56:50.516Z  WARN 9500 --- [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2023-12-12T11:56:50.857Z  INFO 9500 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-12-12T11:56:50.865Z  INFO 9500 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-12T11:56:50.908Z DEBUG 9500 --- [main] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT text, result FROM responses]
+2023-12-12T11:56:50.909Z DEBUG 9500 --- [main] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2023-12-12T11:56:51.151Z  WARN 9500 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-12T11:56:51.638Z  INFO 9500 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/TechChallengeDB/LoweConexDB'
+2023-12-12T11:56:51.708Z  INFO 9500 --- [main] C.L.i.PalindromeServiceTest              : Started PalindromeServiceTest in 4.023 seconds (process running for 5.344)
+2023-12-12T11:56:52.645Z DEBUG 9500 --- [main] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL update
+2023-12-12T11:56:52.645Z DEBUG 9500 --- [main] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [INSERT INTO responses (text, result) VALUES (?, ?)]
+2023-12-12T11:56:52.646Z DEBUG 9500 --- [main] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2023-12-12T11:56:52.690Z  INFO 9500 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-12T11:56:52.692Z  INFO 9500 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : LoweConex - Shutdown initiated...
+2023-12-12T11:56:52.720Z  INFO 9500 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : LoweConex - Shutdown completed.
+2023-12-12T11:57:03.725Z  INFO 27264 --- [main] C.LoweConex.LoweConexApplicationTests    : Starting LoweConexApplicationTests using Java 17.0.6 with PID 27264 (started by Caolan in C:\Users\Caolan\Desktop\LoweConex)
+2023-12-12T11:57:03.726Z  INFO 27264 --- [main] C.LoweConex.LoweConexApplicationTests    : No active profile set, falling back to 1 default profile: "default"
+2023-12-12T11:57:04.636Z  INFO 27264 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-12T11:57:04.668Z  INFO 27264 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 0 JPA repository interfaces.
+2023-12-12T11:57:05.155Z DEBUG 27264 --- [main] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2023-12-12T11:57:05.156Z  INFO 27264 --- [main] com.zaxxer.hikari.HikariDataSource       : LoweConex - Starting...
+2023-12-12T11:57:05.475Z  INFO 27264 --- [main] com.zaxxer.hikari.pool.HikariPool        : LoweConex - Added connection conn0: url=jdbc:h2:file:~/TechChallengeDB/LoweConexDB user=SA
+2023-12-12T11:57:05.477Z  INFO 27264 --- [main] com.zaxxer.hikari.HikariDataSource       : LoweConex - Start completed.
+2023-12-12T11:57:05.481Z DEBUG 27264 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from file [C:\Users\Caolan\Desktop\LoweConex\target\classes\schema.sql]
+2023-12-12T11:57:05.489Z DEBUG 27264 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : 0 returned as update count for SQL: CREATE TABLE IF NOT EXISTS responses ( id INT AUTO_INCREMENT PRIMARY KEY, text VARCHAR(255), result VARCHAR(255) )
+2023-12-12T11:57:05.492Z DEBUG 27264 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from file [C:\Users\Caolan\Desktop\LoweConex\target\classes\schema.sql] in 8 ms.
+2023-12-12T11:57:05.626Z  INFO 27264 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-12T11:57:05.716Z  INFO 27264 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
+2023-12-12T11:57:05.774Z  INFO 27264 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2023-12-12T11:57:06.168Z  INFO 27264 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-12T11:57:06.236Z  WARN 27264 --- [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2023-12-12T11:57:06.617Z  INFO 27264 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-12-12T11:57:06.623Z  INFO 27264 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-12T11:57:06.683Z DEBUG 27264 --- [main] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT text, result FROM responses]
+2023-12-12T11:57:06.685Z DEBUG 27264 --- [main] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2023-12-12T11:57:06.965Z  WARN 27264 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-12T11:57:07.466Z  INFO 27264 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/TechChallengeDB/LoweConexDB'
+2023-12-12T11:57:07.603Z  INFO 27264 --- [main] C.LoweConex.LoweConexApplicationTests    : Started LoweConexApplicationTests in 4.341 seconds (process running for 5.645)
+2023-12-12T11:57:09.084Z  INFO 27264 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-12T11:57:09.090Z  INFO 27264 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : LoweConex - Shutdown initiated...
+2023-12-12T11:57:09.141Z  INFO 27264 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : LoweConex - Shutdown completed.
+2023-12-12T11:57:42.198Z  INFO 29612 --- [restartedMain] Caolan.LoweConex.LoweConexApplication    : Starting LoweConexApplication using Java 17.0.6 with PID 29612 (C:\Users\Caolan\Desktop\LoweConex\target\classes started by Caolan in C:\Users\Caolan\Desktop\LoweConex)
+2023-12-12T11:57:42.200Z  INFO 29612 --- [restartedMain] Caolan.LoweConex.LoweConexApplication    : No active profile set, falling back to 1 default profile: "default"
+2023-12-12T11:57:42.257Z  INFO 29612 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-12-12T11:57:42.258Z  INFO 29612 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-12-12T11:57:42.809Z  INFO 29612 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-12T11:57:42.827Z  INFO 29612 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 0 JPA repository interfaces.
+2023-12-12T11:57:43.366Z  INFO 29612 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2023-12-12T11:57:43.375Z  INFO 29612 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-12T11:57:43.376Z  INFO 29612 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2023-12-12T11:57:43.425Z  INFO 29612 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-12T11:57:43.426Z  INFO 29612 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1167 ms
+2023-12-12T11:57:43.452Z  INFO 29612 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : LoweConex - Starting...
+2023-12-12T11:57:43.647Z  INFO 29612 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : LoweConex - Added connection conn0: url=jdbc:h2:file:~/TechChallengeDB/LoweConexDB user=SA
+2023-12-12T11:57:43.648Z  INFO 29612 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : LoweConex - Start completed.
+2023-12-12T11:57:43.657Z  INFO 29612 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/TechChallengeDB/LoweConexDB'
+2023-12-12T11:57:43.712Z DEBUG 29612 --- [restartedMain] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2023-12-12T11:57:43.715Z DEBUG 29612 --- [restartedMain] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from file [C:\Users\Caolan\Desktop\LoweConex\target\classes\schema.sql]
+2023-12-12T11:57:43.719Z DEBUG 29612 --- [restartedMain] o.s.jdbc.datasource.init.ScriptUtils     : 0 returned as update count for SQL: CREATE TABLE IF NOT EXISTS responses ( id INT AUTO_INCREMENT PRIMARY KEY, text VARCHAR(255), result VARCHAR(255) )
+2023-12-12T11:57:43.723Z DEBUG 29612 --- [restartedMain] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from file [C:\Users\Caolan\Desktop\LoweConex\target\classes\schema.sql] in 5 ms.
+2023-12-12T11:57:43.779Z  INFO 29612 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-12T11:57:43.833Z  INFO 29612 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
+2023-12-12T11:57:43.864Z  INFO 29612 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2023-12-12T11:57:44.078Z  INFO 29612 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-12T11:57:44.116Z  WARN 29612 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2023-12-12T11:57:44.362Z  INFO 29612 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-12-12T11:57:44.366Z  INFO 29612 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-12T11:57:44.397Z DEBUG 29612 --- [restartedMain] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT text, result FROM responses]
+2023-12-12T11:57:44.398Z DEBUG 29612 --- [restartedMain] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2023-12-12T11:57:44.470Z  WARN 29612 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-12T11:57:44.765Z  INFO 29612 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-12-12T11:57:44.796Z  INFO 29612 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2023-12-12T11:57:44.803Z  INFO 29612 --- [restartedMain] Caolan.LoweConex.LoweConexApplication    : Started LoweConexApplication in 3.029 seconds (process running for 3.454)
+2023-12-12T11:57:54.330Z  INFO 29612 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-12T11:57:54.330Z  INFO 29612 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-12-12T11:57:54.331Z  INFO 29612 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-12-12T11:57:54.399Z DEBUG 29612 --- [http-nio-8080-exec-2] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL update
+2023-12-12T11:57:54.400Z DEBUG 29612 --- [http-nio-8080-exec-2] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [INSERT INTO responses (text, result) VALUES (?, ?)]
+2023-12-12T11:57:54.400Z DEBUG 29612 --- [http-nio-8080-exec-2] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2023-12-12T11:57:57.638Z DEBUG 29612 --- [http-nio-8080-exec-3] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL update
+2023-12-12T11:57:57.638Z DEBUG 29612 --- [http-nio-8080-exec-3] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [INSERT INTO responses (text, result) VALUES (?, ?)]
+2023-12-12T11:57:57.639Z DEBUG 29612 --- [http-nio-8080-exec-3] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2023-12-12T11:58:07.170Z  INFO 29612 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-12T11:58:07.173Z  INFO 29612 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : LoweConex - Shutdown initiated...
+2023-12-12T11:58:07.200Z  INFO 29612 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : LoweConex - Shutdown completed.
+2023-12-12T11:58:20.375Z  INFO 25480 --- [main] C.L.i.PalindromeControllerTest           : Starting PalindromeControllerTest using Java 17.0.6 with PID 25480 (started by Caolan in C:\Users\Caolan\Desktop\LoweConex)
+2023-12-12T11:58:20.377Z  INFO 25480 --- [main] C.L.i.PalindromeControllerTest           : No active profile set, falling back to 1 default profile: "default"
+2023-12-12T11:58:21.257Z  INFO 25480 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-12T11:58:21.295Z  INFO 25480 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 0 JPA repository interfaces.
+2023-12-12T11:58:22.975Z DEBUG 25480 --- [main] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2023-12-12T11:58:22.977Z  INFO 25480 --- [main] com.zaxxer.hikari.HikariDataSource       : LoweConex - Starting...
+2023-12-12T11:58:23.289Z  INFO 25480 --- [main] com.zaxxer.hikari.pool.HikariPool        : LoweConex - Added connection conn0: url=jdbc:h2:file:~/TechChallengeDB/LoweConexDB user=SA
+2023-12-12T11:58:23.292Z  INFO 25480 --- [main] com.zaxxer.hikari.HikariDataSource       : LoweConex - Start completed.
+2023-12-12T11:58:23.296Z DEBUG 25480 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from file [C:\Users\Caolan\Desktop\LoweConex\target\classes\schema.sql]
+2023-12-12T11:58:23.303Z DEBUG 25480 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : 0 returned as update count for SQL: CREATE TABLE IF NOT EXISTS responses ( id INT AUTO_INCREMENT PRIMARY KEY, text VARCHAR(255), result VARCHAR(255) )
+2023-12-12T11:58:23.305Z DEBUG 25480 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from file [C:\Users\Caolan\Desktop\LoweConex\target\classes\schema.sql] in 7 ms.
+2023-12-12T11:58:23.449Z  INFO 25480 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-12T11:58:23.547Z  INFO 25480 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
+2023-12-12T11:58:23.615Z  INFO 25480 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2023-12-12T11:58:23.830Z  INFO 25480 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-12T11:58:23.926Z  WARN 25480 --- [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2023-12-12T11:58:24.418Z  INFO 25480 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-12-12T11:58:24.427Z  INFO 25480 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-12T11:58:24.680Z  WARN 25480 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-12T11:58:25.162Z  INFO 25480 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/TechChallengeDB/LoweConexDB'
+2023-12-12T11:58:25.236Z  INFO 25480 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-12-12T11:58:25.237Z  INFO 25480 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-12-12T11:58:25.238Z  INFO 25480 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2023-12-12T11:58:25.262Z  INFO 25480 --- [main] C.L.i.PalindromeControllerTest           : Started PalindromeControllerTest in 5.286 seconds (process running for 6.462)
+2023-12-12T11:58:25.664Z  INFO 25480 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [Caolan.LoweConex.integrationTests.PalindromeServiceTest]: PalindromeServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-12-12T11:58:25.667Z  INFO 25480 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration Caolan.LoweConex.LoweConexApplication for test class Caolan.LoweConex.integrationTests.PalindromeServiceTest
+2023-12-12T11:58:25.674Z  INFO 25480 --- [main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+2023-12-12T11:58:25.726Z  INFO 25480 --- [main] C.L.i.PalindromeServiceTest              : Starting PalindromeServiceTest using Java 17.0.6 with PID 25480 (started by Caolan in C:\Users\Caolan\Desktop\LoweConex)
+2023-12-12T11:58:25.727Z  INFO 25480 --- [main] C.L.i.PalindromeServiceTest              : No active profile set, falling back to 1 default profile: "default"
+2023-12-12T11:58:25.933Z  INFO 25480 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-12T11:58:25.937Z  INFO 25480 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 JPA repository interfaces.
+2023-12-12T11:58:26.021Z DEBUG 25480 --- [main] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2023-12-12T11:58:26.021Z  INFO 25480 --- [main] com.zaxxer.hikari.HikariDataSource       : LoweConex - Starting...
+2023-12-12T11:58:26.022Z  INFO 25480 --- [main] com.zaxxer.hikari.pool.HikariPool        : LoweConex - Added connection conn10: url=jdbc:h2:file:~/TechChallengeDB/LoweConexDB user=SA
+2023-12-12T11:58:26.023Z  INFO 25480 --- [main] com.zaxxer.hikari.HikariDataSource       : LoweConex - Start completed.
+2023-12-12T11:58:26.023Z DEBUG 25480 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from file [C:\Users\Caolan\Desktop\LoweConex\target\classes\schema.sql]
+2023-12-12T11:58:26.024Z DEBUG 25480 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : 0 returned as update count for SQL: CREATE TABLE IF NOT EXISTS responses ( id INT AUTO_INCREMENT PRIMARY KEY, text VARCHAR(255), result VARCHAR(255) )
+2023-12-12T11:58:26.024Z DEBUG 25480 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from file [C:\Users\Caolan\Desktop\LoweConex\target\classes\schema.sql] in 1 ms.
+2023-12-12T11:58:26.040Z  INFO 25480 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-12T11:58:26.045Z  INFO 25480 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2023-12-12T11:58:26.051Z  INFO 25480 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-12T11:58:26.053Z  WARN 25480 --- [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2023-12-12T11:58:26.063Z  INFO 25480 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-12-12T11:58:26.063Z  INFO 25480 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-12T11:58:26.077Z DEBUG 25480 --- [main] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT text, result FROM responses]
+2023-12-12T11:58:26.078Z DEBUG 25480 --- [main] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2023-12-12T11:58:26.195Z  WARN 25480 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-12T11:58:26.339Z  INFO 25480 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/TechChallengeDB/LoweConexDB'
+2023-12-12T11:58:26.362Z  INFO 25480 --- [main] C.L.i.PalindromeServiceTest              : Started PalindromeServiceTest in 0.689 seconds (process running for 7.562)
+2023-12-12T11:58:26.377Z DEBUG 25480 --- [main] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL update
+2023-12-12T11:58:26.378Z DEBUG 25480 --- [main] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [INSERT INTO responses (text, result) VALUES (?, ?)]
+2023-12-12T11:58:26.378Z DEBUG 25480 --- [main] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2023-12-12T11:58:26.403Z  INFO 25480 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [Caolan.LoweConex.LoweConexApplicationTests]: LoweConexApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-12-12T11:58:26.410Z  INFO 25480 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration Caolan.LoweConex.LoweConexApplication for test class Caolan.LoweConex.LoweConexApplicationTests
+2023-12-12T11:58:26.701Z  INFO 25480 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-12T11:58:26.704Z  INFO 25480 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : LoweConex - Shutdown initiated...
+2023-12-12T11:58:26.708Z  INFO 25480 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : LoweConex - Shutdown completed.
+2023-12-12T11:58:26.711Z  INFO 25480 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-12T11:58:26.712Z  INFO 25480 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : LoweConex - Shutdown initiated...
+2023-12-12T11:58:26.741Z  INFO 25480 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : LoweConex - Shutdown completed.
+2023-12-12T12:17:24.790Z  INFO 19668 --- [main] C.L.i.PalindromeControllerTest           : Starting PalindromeControllerTest using Java 17.0.6 with PID 19668 (started by Caolan in C:\Users\Caolan\Desktop\Caolan Rice LoweConex Challenge)
+2023-12-12T12:17:24.793Z  INFO 19668 --- [main] C.L.i.PalindromeControllerTest           : No active profile set, falling back to 1 default profile: "default"
+2023-12-12T12:17:25.570Z  INFO 19668 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-12T12:17:25.604Z  INFO 19668 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 0 JPA repository interfaces.
+2023-12-12T12:17:27.222Z DEBUG 19668 --- [main] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2023-12-12T12:17:27.223Z  INFO 19668 --- [main] com.zaxxer.hikari.HikariDataSource       : LoweConex - Starting...
+2023-12-12T12:17:27.542Z  INFO 19668 --- [main] com.zaxxer.hikari.pool.HikariPool        : LoweConex - Added connection conn0: url=jdbc:h2:file:~/TechChallengeDB/LoweConexDB user=SA
+2023-12-12T12:17:27.545Z  INFO 19668 --- [main] com.zaxxer.hikari.HikariDataSource       : LoweConex - Start completed.
+2023-12-12T12:17:27.551Z DEBUG 19668 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from file [C:\Users\Caolan\Desktop\Caolan Rice LoweConex Challenge\target\classes\schema.sql]
+2023-12-12T12:17:27.559Z DEBUG 19668 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : 0 returned as update count for SQL: CREATE TABLE IF NOT EXISTS responses ( id INT AUTO_INCREMENT PRIMARY KEY, text VARCHAR(255), result VARCHAR(255) )
+2023-12-12T12:17:27.562Z DEBUG 19668 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from file [C:\Users\Caolan\Desktop\Caolan Rice LoweConex Challenge\target\classes\schema.sql] in 8 ms.
+2023-12-12T12:17:27.697Z  INFO 19668 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-12T12:17:27.803Z  INFO 19668 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
+2023-12-12T12:17:27.866Z  INFO 19668 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2023-12-12T12:17:28.110Z  INFO 19668 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-12T12:17:28.209Z  WARN 19668 --- [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2023-12-12T12:17:28.681Z  INFO 19668 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-12-12T12:17:28.689Z  INFO 19668 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-12T12:17:28.939Z  WARN 19668 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-12T12:17:29.436Z  INFO 19668 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/TechChallengeDB/LoweConexDB'
+2023-12-12T12:17:29.504Z  INFO 19668 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-12-12T12:17:29.505Z  INFO 19668 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-12-12T12:17:29.507Z  INFO 19668 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2023-12-12T12:17:29.532Z  INFO 19668 --- [main] C.L.i.PalindromeControllerTest           : Started PalindromeControllerTest in 5.099 seconds (process running for 6.231)
+2023-12-12T12:17:29.863Z  INFO 19668 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [Caolan.LoweConex.integrationTests.PalindromeServiceTest]: PalindromeServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-12-12T12:17:29.865Z  INFO 19668 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration Caolan.LoweConex.LoweConexApplication for test class Caolan.LoweConex.integrationTests.PalindromeServiceTest
+2023-12-12T12:17:29.871Z  INFO 19668 --- [main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+2023-12-12T12:17:29.909Z  INFO 19668 --- [main] C.L.i.PalindromeServiceTest              : Starting PalindromeServiceTest using Java 17.0.6 with PID 19668 (started by Caolan in C:\Users\Caolan\Desktop\Caolan Rice LoweConex Challenge)
+2023-12-12T12:17:29.910Z  INFO 19668 --- [main] C.L.i.PalindromeServiceTest              : No active profile set, falling back to 1 default profile: "default"
+2023-12-12T12:17:30.135Z  INFO 19668 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-12T12:17:30.140Z  INFO 19668 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 JPA repository interfaces.
+2023-12-12T12:17:30.211Z DEBUG 19668 --- [main] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2023-12-12T12:17:30.211Z  INFO 19668 --- [main] com.zaxxer.hikari.HikariDataSource       : LoweConex - Starting...
+2023-12-12T12:17:30.213Z  INFO 19668 --- [main] com.zaxxer.hikari.pool.HikariPool        : LoweConex - Added connection conn10: url=jdbc:h2:file:~/TechChallengeDB/LoweConexDB user=SA
+2023-12-12T12:17:30.214Z  INFO 19668 --- [main] com.zaxxer.hikari.HikariDataSource       : LoweConex - Start completed.
+2023-12-12T12:17:30.214Z DEBUG 19668 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from file [C:\Users\Caolan\Desktop\Caolan Rice LoweConex Challenge\target\classes\schema.sql]
+2023-12-12T12:17:30.215Z DEBUG 19668 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : 0 returned as update count for SQL: CREATE TABLE IF NOT EXISTS responses ( id INT AUTO_INCREMENT PRIMARY KEY, text VARCHAR(255), result VARCHAR(255) )
+2023-12-12T12:17:30.215Z DEBUG 19668 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from file [C:\Users\Caolan\Desktop\Caolan Rice LoweConex Challenge\target\classes\schema.sql] in 1 ms.
+2023-12-12T12:17:30.234Z  INFO 19668 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-12T12:17:30.239Z  INFO 19668 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2023-12-12T12:17:30.248Z  INFO 19668 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-12T12:17:30.250Z  WARN 19668 --- [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2023-12-12T12:17:30.261Z  INFO 19668 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-12-12T12:17:30.262Z  INFO 19668 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-12T12:17:30.280Z DEBUG 19668 --- [main] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT text, result FROM responses]
+2023-12-12T12:17:30.281Z DEBUG 19668 --- [main] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2023-12-12T12:17:30.397Z  WARN 19668 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-12T12:17:30.550Z  INFO 19668 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/TechChallengeDB/LoweConexDB'
+2023-12-12T12:17:30.571Z  INFO 19668 --- [main] C.L.i.PalindromeServiceTest              : Started PalindromeServiceTest in 0.701 seconds (process running for 7.27)
+2023-12-12T12:17:30.581Z DEBUG 19668 --- [main] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL update
+2023-12-12T12:17:30.582Z DEBUG 19668 --- [main] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [INSERT INTO responses (text, result) VALUES (?, ?)]
+2023-12-12T12:17:30.582Z DEBUG 19668 --- [main] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2023-12-12T12:17:30.608Z  INFO 19668 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [Caolan.LoweConex.LoweConexApplicationTests]: LoweConexApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-12-12T12:17:30.614Z  INFO 19668 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration Caolan.LoweConex.LoweConexApplication for test class Caolan.LoweConex.LoweConexApplicationTests
+2023-12-12T12:17:30.905Z  INFO 19668 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-12T12:17:30.908Z  INFO 19668 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : LoweConex - Shutdown initiated...
+2023-12-12T12:17:30.911Z  INFO 19668 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : LoweConex - Shutdown completed.
+2023-12-12T12:17:30.914Z  INFO 19668 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-12T12:17:30.915Z  INFO 19668 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : LoweConex - Shutdown initiated...
+2023-12-12T12:17:30.952Z  INFO 19668 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : LoweConex - Shutdown completed.
+2023-12-12T12:17:45.999Z  INFO 20408 --- [restartedMain] Caolan.LoweConex.LoweConexApplication    : Starting LoweConexApplication using Java 17.0.6 with PID 20408 (C:\Users\Caolan\Desktop\Caolan Rice LoweConex Challenge\target\classes started by Caolan in C:\Users\Caolan\Desktop\Caolan Rice LoweConex Challenge)
+2023-12-12T12:17:46.002Z  INFO 20408 --- [restartedMain] Caolan.LoweConex.LoweConexApplication    : No active profile set, falling back to 1 default profile: "default"
+2023-12-12T12:17:46.055Z  INFO 20408 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-12-12T12:17:46.055Z  INFO 20408 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-12-12T12:17:46.645Z  INFO 20408 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-12T12:17:46.663Z  INFO 20408 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 JPA repository interfaces.
+2023-12-12T12:17:47.193Z  INFO 20408 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2023-12-12T12:17:47.202Z  INFO 20408 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-12T12:17:47.202Z  INFO 20408 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2023-12-12T12:17:47.252Z  INFO 20408 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-12T12:17:47.252Z  INFO 20408 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1196 ms
+2023-12-12T12:17:47.279Z  INFO 20408 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : LoweConex - Starting...
+2023-12-12T12:17:47.474Z  INFO 20408 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : LoweConex - Added connection conn0: url=jdbc:h2:file:~/TechChallengeDB/LoweConexDB user=SA
+2023-12-12T12:17:47.476Z  INFO 20408 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : LoweConex - Start completed.
+2023-12-12T12:17:47.485Z  INFO 20408 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/TechChallengeDB/LoweConexDB'
+2023-12-12T12:17:47.540Z DEBUG 20408 --- [restartedMain] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2023-12-12T12:17:47.541Z DEBUG 20408 --- [restartedMain] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from file [C:\Users\Caolan\Desktop\Caolan Rice LoweConex Challenge\target\classes\schema.sql]
+2023-12-12T12:17:47.545Z DEBUG 20408 --- [restartedMain] o.s.jdbc.datasource.init.ScriptUtils     : 0 returned as update count for SQL: CREATE TABLE IF NOT EXISTS responses ( id INT AUTO_INCREMENT PRIMARY KEY, text VARCHAR(255), result VARCHAR(255) )
+2023-12-12T12:17:47.549Z DEBUG 20408 --- [restartedMain] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from file [C:\Users\Caolan\Desktop\Caolan Rice LoweConex Challenge\target\classes\schema.sql] in 5 ms.
+2023-12-12T12:17:47.604Z  INFO 20408 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-12T12:17:47.655Z  INFO 20408 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
+2023-12-12T12:17:47.686Z  INFO 20408 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2023-12-12T12:17:47.896Z  INFO 20408 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-12T12:17:47.936Z  WARN 20408 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2023-12-12T12:17:48.184Z  INFO 20408 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-12-12T12:17:48.188Z  INFO 20408 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-12T12:17:48.222Z DEBUG 20408 --- [restartedMain] o.s.jdbc.core.JdbcTemplate               : Executing SQL query [SELECT text, result FROM responses]
+2023-12-12T12:17:48.223Z DEBUG 20408 --- [restartedMain] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2023-12-12T12:17:48.293Z  WARN 20408 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-12T12:17:48.619Z  INFO 20408 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-12-12T12:17:48.651Z  INFO 20408 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2023-12-12T12:17:48.657Z  INFO 20408 --- [restartedMain] Caolan.LoweConex.LoweConexApplication    : Started LoweConexApplication in 3.063 seconds (process running for 3.456)
+2023-12-12T12:18:17.854Z  INFO 20408 --- [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-12T12:18:17.855Z  INFO 20408 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-12-12T12:18:17.858Z  INFO 20408 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-12-12T12:18:17.929Z DEBUG 20408 --- [http-nio-8080-exec-3] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL update
+2023-12-12T12:18:17.929Z DEBUG 20408 --- [http-nio-8080-exec-3] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [INSERT INTO responses (text, result) VALUES (?, ?)]
+2023-12-12T12:18:17.930Z DEBUG 20408 --- [http-nio-8080-exec-3] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2023-12-12T12:18:21.772Z DEBUG 20408 --- [http-nio-8080-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL update
+2023-12-12T12:18:21.772Z DEBUG 20408 --- [http-nio-8080-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [INSERT INTO responses (text, result) VALUES (?, ?)]
+2023-12-12T12:18:21.773Z DEBUG 20408 --- [http-nio-8080-exec-5] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2023-12-12T12:18:32.298Z  INFO 20408 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-12T12:18:32.301Z  INFO 20408 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : LoweConex - Shutdown initiated...
+2023-12-12T12:18:32.303Z  INFO 20408 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : LoweConex - Shutdown completed.
